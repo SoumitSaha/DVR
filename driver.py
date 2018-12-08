@@ -12,7 +12,7 @@ class Driver(object):
 			constructor
 		"""
 		self.topo = topo
-		self.host = '192.168.0.100' # driver ip address
+		self.host = '192.168.10.100' # driver ip address
 		self.port = 4747 # port number must match the one in router.py
 		self.hosts = self.populate_hosts() # populate hosts
 		self.clk = 1 # number of sync clocks
