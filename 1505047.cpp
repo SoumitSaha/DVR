@@ -318,8 +318,7 @@ void try_to_update_on_cost(string nbr, int changedCost, int oldCost)
 			updatedtable = true;
 		}
     }
-    if(updatedtable == true)
-        print_route_table();
+    if(updatedtable == true) print_route_table();
 	updatedtable = false;
 }
 
@@ -418,4 +417,5 @@ int main(int argc, char* argv[]){
 	else cout << "Connection failed." << endl;
 	
 	start_router();
+	close(sockfd);
 }
